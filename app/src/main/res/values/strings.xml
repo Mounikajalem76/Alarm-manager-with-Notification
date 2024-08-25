@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Alarm Manager With Notification</string>
+    <string name="_9_30am">9:30AM</string>
+    <string name="select_time">Select Time</string>
+    <string name="set_alarm">Set Alarm</string>
+    <string name="cancel_alarm">Cancel Alarm</string>
+</resources>

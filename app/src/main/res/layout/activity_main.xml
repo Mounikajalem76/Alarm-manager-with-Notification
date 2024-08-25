@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:textSize="42sp"
+        android:id="@+id/textViewId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/_9_30am"
+       android:layout_marginTop="80dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:textSize="22sp"
+        android:id="@+id/SelectTimeId"
+        android:text="@string/select_time"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        app:layout_constraintEnd_toEndOf="@id/textViewId"
+        app:layout_constraintStart_toStartOf="@id/textViewId"
+        app:layout_constraintTop_toBottomOf="@id/textViewId"
+        android:layout_marginTop="30dp"/>
+    <com.google.android.material.button.MaterialButton
+    android:layout_width="200dp"
+    android:layout_height="60dp"
+    android:textSize="22sp"
+    android:id="@+id/SetAlarmId"
+    android:text="@string/set_alarm"
+    style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+    app:layout_constraintEnd_toEndOf="@id/SelectTimeId"
+    app:layout_constraintStart_toStartOf="@id/SelectTimeId"
+    app:layout_constraintTop_toBottomOf="@id/SelectTimeId"
+    android:layout_marginTop="30dp"/>
+    <com.google.android.material.button.MaterialButton
+    android:layout_width="200dp"
+    android:layout_height="60dp"
+    android:textSize="19sp"
+    android:id="@+id/CancelAlarmId"
+    android:text="@string/cancel_alarm"
+    style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+    app:layout_constraintEnd_toEndOf="@id/SetAlarmId"
+    app:layout_constraintStart_toStartOf="@id/SetAlarmId"
+    app:layout_constraintTop_toBottomOf="@id/SetAlarmId"
+    android:layout_marginTop="25dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
